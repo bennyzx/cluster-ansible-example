@@ -1,0 +1,9 @@
+---
+- hosts: web
+  vars:
+    http_port: 8082
+  gather_facts: True
+  tasks: 
+    - name: Stop TomcatB
+      shell: nohup /Users/zhouxuan/TomcatB/bin/shutdown.sh & 
+ 

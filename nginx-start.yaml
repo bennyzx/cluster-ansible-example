@@ -1,0 +1,10 @@
+---
+- hosts: web
+  vars:
+    http_port: 8088
+    max_clients: 200
+  gather_facts: True
+  tasks:
+    - name: Start Nginx
+      shell: /usr/local/bin/brew services start nginx
+

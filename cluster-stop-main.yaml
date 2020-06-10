@@ -1,0 +1,4 @@
+- import_playbook: nginx-stop.yaml
+- import_playbook: tomcatA-stop.yml
+- import_playbook: tomcatB-stop.yml
+

@@ -1,0 +1,8 @@
+---
+- hosts: web
+  vars:
+    http_port: 8081
+  gather_facts: False
+  tasks: 
+    - name: Start TomcatA
+      shell: nohup /Users/zhouxuan/TomcatA/bin/startup.sh &
